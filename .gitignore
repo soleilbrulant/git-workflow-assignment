@@ -1,0 +1,5 @@
+# Logs
+*.log
+
+# Temporary build / runtime directories
+temp/
