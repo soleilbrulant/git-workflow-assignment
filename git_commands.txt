@@ -1,0 +1,64 @@
+================================================================================
+                    GIT COMMANDS DOCUMENTATION (git_commands.txt)
+            Course Assignment: Git & GitHub Workflow & Software Testing
+            Student: Shashwat Verma | Roll No: 10360
+================================================================================
+
+1. git init
+   Initializes a new, empty Git version control repository inside the local project directory.
+
+2. git branch -M main
+   Renames the initial default branch to 'main' conforming to modern version control conventions.
+
+3. git config user.name "Shashwat Verma"
+   Sets the author name associated with all Git commits within this repository.
+
+4. git config user.email "shashwatverma2911@gmail.com"
+   Configures the author email address associated with all Git commits within this repository.
+
+5. git status
+   Displays the state of the working tree and staging area, showing tracked, modified, untracked, and ignored files.
+
+6. git add <file> / git add .
+   Stages changes from the working directory to the Git index in preparation for committing.
+
+7. git commit -m "<message>"
+   Records a snapshot of the staged changes into repository history along with a descriptive log message.
+
+8. git diff
+   Inspects line-by-line differences between modified files in the working directory and the previous commit/staging area.
+
+9. git branch feature
+   Creates a new branch named 'feature' pointing to the current commit without immediately switching to it.
+
+10. git checkout <branch> (or git switch <branch>)
+    Updates files in the working tree to match the specified branch and updates HEAD to that branch.
+
+11. git branch
+    Lists all local branches in the repository, with an asterisk marking the currently active branch.
+
+12. git merge --no-ff feature -m "<message>"
+    Merges the 'feature' branch into the current branch ('main') while creating an explicit merge commit to maintain branch topology.
+
+13. git log --graph --oneline --decorate --all
+    Renders a compact, single-line visual tree of all commits, branch pointers, HEAD, and merge history across the entire repository.
+
+14. git revert HEAD --no-edit
+    Undoes the effects of the latest commit by generating a new inverse commit, preserving historical audit trails for collaborative remotes.
+
+15. git reset HEAD~1
+    Moves the HEAD pointer back by one commit; used for undoing or rewording local, unpushed commits without retaining the reverted commit.
+
+16. git remote add origin <url>
+    Associates the local repository with a remote repository hosted on GitHub under the alias 'origin'.
+
+17. git remote -v
+    Displays the configured remote aliases along with their corresponding fetch and push URLs.
+
+18. git push -u origin main
+    Pushes commits from the local 'main' branch to the remote GitHub repository and establishes upstream tracking.
+
+19. git push origin feature
+    Pushes the local 'feature' branch to GitHub so branch history and convergence are fully verifiable on the remote.
+
+================================================================================
